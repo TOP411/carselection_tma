@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import WebApp from '@twa-dev/sdk'
 import { XMLParser, XMLBuilder } from 'fast-xml-parser'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -260,7 +261,7 @@ const morph = (int, array) => {
       
       <div class="submit-form">
         <input type="text" placeholder="Номер телефона">
-        <button class="color-button">Рассчитать стоимость</button>
+        <button class="color-button" @click="WebApp.showAlert(currentCar.name)">Рассчитать стоимость</button>
       </div>
     </div>
 
