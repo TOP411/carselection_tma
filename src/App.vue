@@ -11,7 +11,7 @@ const modules = [ Navigation, Pagination ]
 
 const getFeed = async (url) => {
   try {
-    const response = await fetch(`http://chatbotapi.top411.ru/feed/index.php?feed=${url}`)
+    const response = await fetch(`https://chatbotapi.top411.ru/feed/index.php?feed=${url}`)
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
