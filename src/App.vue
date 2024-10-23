@@ -261,7 +261,7 @@ const morph = (int, array) => {
       
       <div class="submit-form">
         <input type="text" placeholder="Номер телефона">
-        <button class="color-button" @click="() => WebApp.showAlert(`${currentCar.name}`)">Рассчитать стоимость</button>
+        <button class="color-button" @click="WebApp.showAlert(currentCar.name)">Рассчитать стоимость</button>
       </div>
     </div>
 
